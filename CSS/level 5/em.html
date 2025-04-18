@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative  unit: percentage</title>
+    <style>
+        *{
+            background-color: green;
+            padding: 0;
+            margin: 0;
+           
+        }
+        #first {
+            border: 3px solid;
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            font-size: 20px;
+        }
+        /* Percentage relative to parent size (height and width) */
+        #second {
+            /* percentage depends on the whole documents size percent Or the content box size percentage called parents size (height and width) */
+            height: 10%;
+            width:10%;
+            border: 2px solid;
+            /* em means parent size to multiply by 1em , 2em etc it means 2x */
+            font-size: 2em ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

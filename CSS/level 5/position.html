@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: green;
+        }
+        .box {
+            height: 60px;
+            width: 60px;
+            background-color: blueviolet;
+            margin: 5px;
+            }
+            #box1 {
+                position: static;
+                 
+
+            }
+            #box2 {
+                /* relative occurs the underlapping case it means it can under or into the each boxes into the boxes  */
+                position: relative;
+                left: 70px;
+            }
+            #box3 {
+                /* absolute occurs the overlapping case it means it can on the each boxes upon the boxes  */
+                position: absolute; 
+                top: 65px;
+            }
+            #box4 {
+                /* fixed means when we scrolling the site then fixed box does not scroll it stands its position  scrolling time it works like Absolute*/
+                position: fixed;
+            }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Static</div>
+    <div class="box" id="box2">Relative</div>
+    <div class="box" id="box3">Absolute</div>
+    <div class="box" id="box4">Fixed</div>
+</body>
+</html>

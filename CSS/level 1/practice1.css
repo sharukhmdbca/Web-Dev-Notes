@@ -1,0 +1,19 @@
+/* This is the id selector using in CSS */
+
+#heading {
+    color: rgb(56, 216, 11);
+}
+#random {
+    color: blueviolet;
+} 
+div p{
+    color:crimson;
+}
+.paragraph{
+    background-color: greenyellow;
+}
+#first,#second{
+    background-color: green;
+    color: aquamarine;
+    
+}

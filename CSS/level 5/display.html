@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: green;
+          }
+          /* display:block/Inline / Inline-block/ None */
+          .box{
+            border: 2px solid ;
+            height: 100px; 
+            width: 100px;
+            margin: 5px;
+          }
+          #box1 {
+            background-color: red;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-align: center;
+            /* It is by default... nothing change but it take the block of all horizontal size whole area */
+            display:block ;
+        
+          }
+          #box2 {
+            background-color: yellow;
+            text-decoration: line-through;
+            text-transform: uppercase;
+            text-align: center;
+            /* diplay :inline ; then you don't set its size like height and width , it take its own size  */
+            display: inline;
+          }
+          #box3 {
+            background-color: greenyellow;
+            text-decoration: underline;
+            text-align: center;
+            text-transform: uppercase;
+            /* it should be take its size like height and width whatever you want  */
+            display: inline-block;
+          }
+          #box4 {
+            background-color:darksalmon;
+            text-decoration: underline;
+            text-align: center;
+            text-transform: uppercase;
+            /* for hidden it will be take space for those box which is hidden but when we put display :none then it capture the hidden space easily */
+            visibility: hidden;
+            display: none;
+
+          }
+          #box5 {
+            background-color:rgb(76, 63, 248);
+            text-decoration: underline;
+            text-align: center;
+            text-transform: uppercase;
+
+
+          }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+    <div class="box" id="box4">Box 4</div>
+    <div class="box" id="box5">Box 5</div>
+
+
+</body>
+</html>

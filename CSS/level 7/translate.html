@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            border: 1px dotted ;
+            margin: 5px;
+            margin-left: 80px;
+            border-radius: 10px;
+        }
+        #box1 {
+            background-color: aqua;
+        }
+        #box1:hover {
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* translate */
+                transform:translate(20px);
+            }
+        
+        #box2 {
+            background-color: blueviolet;
+        }
+        #box2:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* translatex */
+                transform:translate(20px, 20px);
+            }
+
+        #box3 {
+            background-color: teal;
+        }
+        #box3:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* translatey */
+                transform:translatey(30px);
+            }
+        #box4 {
+            background-color: chartreuse;
+        }
+        #box4:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* translatez */
+                transform:translateZ(10px);
+            }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Translate</div>
+    <div class="box" id="box2">Translate-x</div>
+    <div class="box" id="box3">Translate-y</div>
+    <div class="box" id="box4">Translate-z</div>
+</body>
+</html>

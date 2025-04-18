@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative  unit: percentage</title>
+    <style>
+        *{
+            background-color: green;
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+           
+        }
+        #first {
+            border: 3px solid;
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            font-size: 20px;
+        }
+        /* Percentage relative to parent size (height and width) */
+        #second {
+            /* percentage depends on the whole documents size percent Or the content box size percentage called parents size (height and width) */
+            height: 50%;
+            width:50%;
+            border: 2px solid;
+            /* Here rem means that how much the font-size of whole document *{}  then let its size is 20px , and child element font size is 2rem then it will be 20px * 2rem = 40rem  that is the size of child element */
+         /* It is using for font-size (root element)  */
+            font-size: 2rem ;
+        }
+    </style>
+</head>
+<body>
+    Hey Srk.....
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color:grey;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+        
+        } 
+        /* box-sizing */
+        #first {
+            background-color: aquamarine;
+            border: 3px solid;
+            box-sizing: border-box;
+        }
+        #second {
+            background-color: blueviolet;
+            border: 3px double;
+            margin: 2px 0px 0px 0px;
+            box-sizing: content-box;
+        }
+    </style>
+    <div class="box" id="first">Box 1</div>
+    <div class="box" id="second">Box 2</div>
+</body>
+</html>

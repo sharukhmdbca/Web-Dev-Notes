@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            border: 1px dotted ;
+            margin: 5px;
+            margin-left: 80px;
+            border-radius: 10px;
+        }
+        #box1 {
+            background-color: aqua;
+        }
+        #box1:hover {
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* scale */
+                transform:scale(2);
+            }
+        
+        #box2 {
+            background-color: blueviolet;
+        }
+        #box2:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* scalex */
+                transform:scaleX(2);
+            }
+
+        #box3 {
+            background-color: teal;
+        }
+        #box3:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* scaley */
+                transform:scaleY(2);
+            }
+        #box4 {
+            background-color: chartreuse;
+        }
+        #box4:hover {
+                transition-property: all;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                /* scalez */
+                transform:scaleZ(2);
+            }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Scale</div>
+    <div class="box" id="box2">Scale-x</div>
+    <div class="box" id="box3">Scale-y</div>
+    <div class="box" id="box4">Scale-z</div>
+</body>
+</html>

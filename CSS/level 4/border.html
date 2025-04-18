@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create borders</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid ;
+            padding: 5px;
+            margin: 5px;
+        }
+        #first {
+            background-color: violet;
+            border: 3px dotted green;
+            margin: 20px 2px 20px 80px;
+        }
+        #second {
+            background-color: yellowgreen;
+            border: 3px solid rgb(3, 5, 113);
+            padding: 20px 20px 20px 20px;
+            /* For Border radius */
+            border-radius: 20px;
+        }
+    </style> 
+
+    <div class="box" id="first">First</div>
+    <div class="box" id="second">Second</div>
+    
+</body>
+</html>

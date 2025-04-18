@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: aqua;
+            height: 30px;
+            
+        }
+        img {
+            height: 100px;
+           
+            
+            
+        }
+        #image {
+            border: 2px solid green;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container {
+            border: 2px dotted brown;
+            height:70px;
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 1px solid;   
+        }
+        #box2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .last {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+        }
+        @media screen and (min-width:300px) and (max-width:400px){
+            .last {
+                background-color: red;
+            }
+        }
+        @media screen and (min-width:400px) {
+            .last {
+                background-color: blue;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dfd">Home</a><a href="adfds">Product</a><a href="dads">Contact</a><a href="adf">Help</a><a href="dfad">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image">
+            <img src="/Images/moon.jpg" alt="Moon">
+            
+        </div><br>
+        <div class="container">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div><br>
+        <div class="last">
+            Div
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
