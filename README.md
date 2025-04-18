@@ -1,0 +1,1 @@
+This repository contains comprehensive notes on Web Development, covering HTML, CSS, and JavaScript. It's designed to help beginners and intermediate learners understand core concepts, with clear explanations, examples, and hands-on snippets to enhance practical skills.
